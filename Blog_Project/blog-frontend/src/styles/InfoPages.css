@@ -1,0 +1,38 @@
+.info-page {
+  max-width: 980px;
+  margin: 34px auto;
+  padding: 0 16px;
+}
+
+.info-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 30px;
+  color: var(--text-main);
+}
+
+.info-card h1 {
+  margin: 0 0 14px;
+}
+
+.info-card h2 {
+  margin: 20px 0 10px;
+}
+
+.info-card p {
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.info-card ul {
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.contact-list p {
+  margin: 6px 0;
+}

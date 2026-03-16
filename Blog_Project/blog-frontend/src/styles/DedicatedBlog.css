@@ -1,0 +1,108 @@
+.blog-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.blog-detail {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  animation: articleReveal 420ms ease both;
+}
+
+.blog-detail h1 {
+  color: var(--text-main);
+  margin-bottom: 20px;
+  font-size: clamp(1.8rem, 4vw, 2.35rem);
+}
+
+.blog-header {
+  display: flex;
+  gap: 14px;
+  color: var(--text-soft);
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  flex-wrap: wrap;
+}
+
+.blog-header span {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.blog-content {
+  color: var(--text-main);
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.blog-hero-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.blog-footer {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  flex-wrap: wrap;
+  color: var(--text-soft);
+}
+
+.blog-footer button {
+  padding: 10px 16px;
+  background: linear-gradient(130deg, rgba(95, 211, 255, 0.35), rgba(133, 240, 201, 0.35));
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-footer button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(4, 16, 38, 0.34);
+}
+
+.blog-footer button:disabled {
+  background: rgba(255, 255, 255, 0.14);
+  color: rgba(232, 240, 255, 0.65);
+  border-color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+}
+
+.blog-note {
+  margin-top: 14px;
+  color: var(--accent-2);
+  font-size: 0.95rem;
+}
+
+.skeleton-detail {
+  cursor: default;
+}
+
+@keyframes articleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
